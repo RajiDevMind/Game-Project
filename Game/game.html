@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guessing Number Game</title>
+</head>
+<body>
+    <div id="bcontainer">
+        <h1>GUESSING NUMBER GAME</h1>
+        <div id="nestedCont">
+            <label id="xlabel">0</label>
+            <label id="ylabel">0</label>
+            <label id="zlabel">0</label><br>
+            <br>
+            <label for="users" id="labeltag">Make sure to enter a Number between <span>"1" to "6"</span> below.</label><br>
+            <p id="labeltag">One Number in each box</p>
+            <input type="text" pattern="[1-6]+" inputmode="numeric" id="xinput" placeholder="0" maxlength="1">
+            <input type="text" id="yinput" placeholder="0" maxlength="1">
+            <input type="text" id="zinput" placeholder="0" maxlength="1"><br>
+            <button id="mybtn">SUBMIT</button>
+        </div>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>

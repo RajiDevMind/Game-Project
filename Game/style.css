@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    background-color: rgb(220, 205, 252);
+
+}
+:root{
+    --padding--ft: 20%;
+    --bk--color: rgb(170, 170, 248);
+    --txt--color: rgb(0, 0, 221);
+}
+h1{
+    color: white;
+    font-family: cursive;
+    line-height: 40px;
+    text-shadow: 2px 0 5px burlywood;
+
+    position: absolute;
+    top: 20px;
+    left: 33%;
+}
+#welc_page{
+    max-width: 400px;
+    min-height: 70px;
+    font-family: cursive;
+    color: rgb(53, 53, 53);
+    background: var(--txt--color);
+    border: 2px solid var(--bk--color);
+    border-radius: 9px;
+    margin: 10px 20px;
+
+    position: absolute;
+    top: 35%;
+    left: 35%;
+
+    animation: 5s alternate-reverse 0s 1 running sliding;
+
+
+}
+@keyframes sliding{
+    from{margin-bottom: 30%;}
+    to{margin-top: 35%;}
+}
+
+#welc_page > h2{
+    text-align: center;
+    background-color: var(--bk--color);
+    border-radius: 9px;
+
+    animation: 10s linear 0s infinite running colormix;
+
+}
+@keyframes colormix{
+    20%{background-color: yellow;}
+    40%{background-color: rgb(252, 147, 10);}
+    60%{background-color: blueviolet;}
+    80%{background-color: white;}
+    100%{background-color: rgb(10, 218, 255);}
+}
+
+#playbtn{
+    width: 400px;
+    height: 36px;
+    color: white;
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 7px;
+    border: 2px solid var(--txt--color);
+    background-color: var(--bk--color);
+    cursor: pointer;
+    
+    position: absolute;
+    top: 50%;
+    right: 34.2%;
+
+    animation: 5s alternate-reverse 0s 1 running sliding-in;
+
+}
+@keyframes sliding-in{
+    from{margin-left: -150px;}
+    to{margin-right: 35%;}
+}
+#playbtn:hover{
+    background-color: #ffffff;
+    transition: 2s;
+}
+
+#playbtn > a{
+    text-decoration: none;
+    background: transparent;   
+}
+#labeltag{
+    font-family: cursive;
+    font-size: 17px;
+    color: var(--txt--color);
+    margin-top: 10px;
+}
+span{
+    color: rgb(0, 0, 0);
+    background: transparent;
+}
+#bcontainer{
+    /*padding: var(--padding--ft);
+    display: flex;
+    flex-wrap: wrap;*/
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+#nestedCont{
+    
+    position: absolute;
+    top: 150px;
+    left: 31%;
+    margin: 20px;
+}
+#xlabel, #ylabel, #zlabel{
+    max-width: 20px;
+    min-height: 20px;
+    padding: 15px;
+    font-family: cursive;
+    font-size: 25px;
+    margin: 10px 15px;
+    border: 3px solid var(--bk--color);
+    border-radius: 6px;
+    text-align: center;
+    color: red;
+    background-color: rgb(255, 255, 255);
+
+    animation: 10s linear 0s infinite running rotate;
+
+    
+}
+@keyframes rotate {
+    100%{transform: rotateX(360deg)}
+    100%{transform: rotateY(360deg)}
+    100%{transform: rotateZ(360deg)}
+}
+#xinput, #yinput, #zinput{
+    max-width: 20px;
+    min-height: 20px;
+    padding: 15px;
+    font-family: cursive;
+    font-size: 25px;
+    margin: 10px 5px;
+    border: 3px solid var(--txt--color);
+    border-radius: 6px;
+    text-align: center;
+    color: var(--txt--color);
+    background-color: rgb(255, 255, 255);
+    
+    
+}
+#xinput:hover, #yinput:hover, #zinput:hover{
+    color: white;
+    background-color: var(--bk--color);
+    transition: 3s ease-in-out;
+    
+}
+#mybtn{
+    min-width: 200px;
+    min-height: 29px;
+    font-size: cursive, sans-serif;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 4px;
+    border: 3px solid blue;
+    color: var(--txt--color);
+    margin: 10px 10px;
+    cursor: pointer;
+}
+#mybtn:hover{
+    background-color: var(--bk--color);
+    transition: 3s ease-in-out;
+}
