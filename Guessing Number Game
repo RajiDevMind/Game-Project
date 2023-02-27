@@ -1,0 +1,8 @@
+# Game-Project
+Random Guessing Game with Numbers
+This is a game that allows user to
+pick 3 numbers randomly. If users two
+numbers in three is correct,
+there will be an alert message that
+the user won!!!
+
